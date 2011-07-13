@@ -1,4 +1,4 @@
-/* Created by jankoatwarpspeed.com */
+/* influenced by jankoatwarpspeed.com */
 (function($) {
   $.fn.formsteps = function(options) {
     options = $.extend({
