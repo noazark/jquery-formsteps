@@ -42,7 +42,7 @@
 
     function createPrevButton(i) {
       var stepName = options.id_prefix + i;
-      $("#" + stepName + "commands").append("<a href='#' id='" + stepName + "Prev' class='prev'>< Back</a>");
+      $("#" + stepName + "commands").append("<button href='#' id='" + stepName + "Prev' class='prev'>< Back</button>");
       $("#" + stepName + "Prev").bind("click", function(e) {
         $(options.submit_button).hide();
         setStep(i - 1);
@@ -51,7 +51,7 @@
 
     function createNextButton(i) {
       var stepName = options.id_prefix + i;
-      $("#" + stepName + "commands").append("<a href='#' id='" + stepName + "Next' class='next'>Next ></a>");
+      $("#" + stepName + "commands").append("<button href='#' id='" + stepName + "Next' class='next'>Next ></button>");
       $("#" + stepName + "Next").bind("click", function(e) {
         if (i + 2 == count) {
           $(options.submit_button).show();
