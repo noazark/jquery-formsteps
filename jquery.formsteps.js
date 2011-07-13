@@ -46,6 +46,8 @@
       $("#" + stepName + "Prev").bind("click", function(e) {
         $(options.submit_button).hide();
         setStep(i - 1);
+        e.preventDefault();
+        return false;
       });
     }
 
@@ -57,6 +59,8 @@
           $(options.submit_button).show();
         }
         setStep(i + 1);
+        e.preventDefault();
+        return false;
       });
     }
 
