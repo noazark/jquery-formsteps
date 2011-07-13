@@ -61,6 +61,9 @@
     }
 
     function setStep(i) {
+      $("#" + options.id_prefix + " li").removeClass("current");
+      $("#" + options.id_prefix + "Desc" + i).addClass("current");
+      
       $("div[id^=" + options.id_prefix + "]", that).hide();
       $("#" + options.id_prefix + i, that).show();
       $("input[name='" + options.id_prefix +"']", that).val(i + 1)
